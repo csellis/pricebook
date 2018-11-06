@@ -7,6 +7,8 @@ const path = require('path');
 
 const keys = require('./config/keys');
 require('./models/User');
+require('./models/Item');
+require('./models/Price');
 require('./services/passport');
 
 mongoose.connect(keys.mongoURI);
@@ -24,6 +26,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/itemRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // Express serves up production assets
