@@ -29,6 +29,7 @@
     "stripe": "^6.12.1"
   },
   "devDependencies": {
+    "eslint-plugin-html": "^4.0.6",
     "prettier": "^1.14.3"
   }
 }

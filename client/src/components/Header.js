@@ -19,7 +19,7 @@ class Header extends Component {
           <li key="payments">
             <Payments />
           </li>,
-          <li key="3" style={{ margin: '0 10px'}}>
+          <li key="3" style={{ margin: '0 10px' }}>
             Credits: {this.props.auth.credits}
           </li>,
           <li key="2">
@@ -34,7 +34,7 @@ class Header extends Component {
       <nav>
         <div className="nav-wrapper">
           <Link
-            to={this.props.auth ? "/products" : "/"}
+            to={this.props.auth ? "/items" : "/"}
             className="left brand-logo"
           >
             Price Book
